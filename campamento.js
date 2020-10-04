@@ -110,8 +110,8 @@ jQuery(document).ready(function($) {
     });
 
     var bounds = [[0,0], [768,1024]];
-    var maxBounds = [[-1000,-900], [1300,1300]];
-    var image = L.imageOverlay('./images/campamento.png', bounds).addTo(map);
+    var maxBounds = [[-700,-900], [1300,1300]];
+    var image = L.imageOverlay('./images/Campamento.png', bounds).addTo(map);
     map.fitBounds(bounds);
     map.setMaxBounds(maxBounds);
 
