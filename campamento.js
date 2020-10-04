@@ -100,11 +100,6 @@ contenidoAlboan ='<h2>Claro Alboan</h2>\
 <iframe width="100%" height="120" src="https://www.youtube.com/embed/-Mi1Gl-lUqw?autoplay=1&controls=0"> </iframe>\
 <p> <a href="https://www.alboan.org/es/actualidad/internacional/trenza-una-cadena-de-solidaridad-somosciudadaniaglobal" target="_blank">Y + info en la web de ALBOAN.</a></p>';
 
-
-
-
-
-
 jQuery(document).ready(function($) {
     $('#modal_bienvenida').modal('show');
     //mapa base
@@ -114,9 +109,9 @@ jQuery(document).ready(function($) {
         attributionControl: false
     });
 
-    var bounds = [[0,0], [600,800]];
-    var maxBounds = [[-700,-900], [1300,1300]];
-    var image = L.imageOverlay('./images/map.jpg', bounds).addTo(map);
+    var bounds = [[0,0], [768,1024]];
+    var maxBounds = [[-1000,-900], [1300,1300]];
+    var image = L.imageOverlay('./images/campamento.png', bounds).addTo(map);
     map.fitBounds(bounds);
     map.setMaxBounds(maxBounds);
 
